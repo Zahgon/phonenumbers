@@ -25,10 +25,10 @@
 package phonenumbers
 
 import (
+	sync "sync"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -86,40 +86,37 @@ var (
 )
 
 func (x PhoneNumber_CountryCodeSource) Enum() *PhoneNumber_CountryCodeSource {
-	p := new(PhoneNumber_CountryCodeSource)
-	*p = x
-	return p
+	_ = "STUB: not implemented"
+	return nil
 }
 
-func (x PhoneNumber_CountryCodeSource) String() string {
-	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
-}
+func (x PhoneNumber_CountryCodeSource) String() string { _ = "STUB: not implemented"; return "" }
 
 func (PhoneNumber_CountryCodeSource) Descriptor() protoreflect.EnumDescriptor {
-	return file_phonenumber_proto_enumTypes[0].Descriptor()
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumDescriptor)
 }
 
 func (PhoneNumber_CountryCodeSource) Type() protoreflect.EnumType {
-	return &file_phonenumber_proto_enumTypes[0]
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumType)
 }
 
 func (x PhoneNumber_CountryCodeSource) Number() protoreflect.EnumNumber {
-	return protoreflect.EnumNumber(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.EnumNumber)
 }
 
 // Deprecated: Do not use.
 func (x *PhoneNumber_CountryCodeSource) UnmarshalJSON(b []byte) error {
-	num, err := protoimpl.X.UnmarshalJSONEnum(x.Descriptor(), b)
-	if err != nil {
-		return err
-	}
-	*x = PhoneNumber_CountryCodeSource(num)
+	_ = "STUB: not implemented"
 	return nil
 }
 
 // Deprecated: Use PhoneNumber_CountryCodeSource.Descriptor instead.
 func (PhoneNumber_CountryCodeSource) EnumDescriptor() ([]byte, []int) {
-	return file_phonenumber_proto_rawDescGZIP(), []int{0, 0}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 type PhoneNumber struct {
@@ -194,91 +191,39 @@ const (
 	Default_PhoneNumber_NumberOfLeadingZeros = int32(1)
 )
 
-func (x *PhoneNumber) Reset() {
-	*x = PhoneNumber{}
-	if protoimpl.UnsafeEnabled {
-		mi := &file_phonenumber_proto_msgTypes[0]
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		ms.StoreMessageInfo(mi)
-	}
-}
+func (x *PhoneNumber) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *PhoneNumber) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *PhoneNumber) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*PhoneNumber) ProtoMessage() {}
+func (*PhoneNumber) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *PhoneNumber) ProtoReflect() protoreflect.Message {
-	mi := &file_phonenumber_proto_msgTypes[0]
-	if protoimpl.UnsafeEnabled && x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use PhoneNumber.ProtoReflect.Descriptor instead.
-func (*PhoneNumber) Descriptor() ([]byte, []int) {
-	return file_phonenumber_proto_rawDescGZIP(), []int{0}
-}
+func (*PhoneNumber) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *PhoneNumber) GetCountryCode() int32 {
-	if x != nil && x.CountryCode != nil {
-		return *x.CountryCode
-	}
-	return 0
-}
+func (x *PhoneNumber) GetCountryCode() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *PhoneNumber) GetNationalNumber() uint64 {
-	if x != nil && x.NationalNumber != nil {
-		return *x.NationalNumber
-	}
-	return 0
-}
+func (x *PhoneNumber) GetNationalNumber() uint64 { _ = "STUB: not implemented"; return 0 }
 
-func (x *PhoneNumber) GetExtension() string {
-	if x != nil && x.Extension != nil {
-		return *x.Extension
-	}
-	return ""
-}
+func (x *PhoneNumber) GetExtension() string { _ = "STUB: not implemented"; return "" }
 
-func (x *PhoneNumber) GetItalianLeadingZero() bool {
-	if x != nil && x.ItalianLeadingZero != nil {
-		return *x.ItalianLeadingZero
-	}
-	return false
-}
+func (x *PhoneNumber) GetItalianLeadingZero() bool { _ = "STUB: not implemented"; return false }
 
-func (x *PhoneNumber) GetNumberOfLeadingZeros() int32 {
-	if x != nil && x.NumberOfLeadingZeros != nil {
-		return *x.NumberOfLeadingZeros
-	}
-	return Default_PhoneNumber_NumberOfLeadingZeros
-}
+func (x *PhoneNumber) GetNumberOfLeadingZeros() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *PhoneNumber) GetRawInput() string {
-	if x != nil && x.RawInput != nil {
-		return *x.RawInput
-	}
-	return ""
-}
+func (x *PhoneNumber) GetRawInput() string { _ = "STUB: not implemented"; return "" }
 
 func (x *PhoneNumber) GetCountryCodeSource() PhoneNumber_CountryCodeSource {
-	if x != nil && x.CountryCodeSource != nil {
-		return *x.CountryCodeSource
-	}
-	return PhoneNumber_UNSPECIFIED
+	_ = "STUB: not implemented"
+	return *new(PhoneNumber_CountryCodeSource)
 }
 
 func (x *PhoneNumber) GetPreferredDomesticCarrierCode() string {
-	if x != nil && x.PreferredDomesticCarrierCode != nil {
-		return *x.PreferredDomesticCarrierCode
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
@@ -333,12 +278,7 @@ var (
 	file_phonenumber_proto_rawDescData = file_phonenumber_proto_rawDesc
 )
 
-func file_phonenumber_proto_rawDescGZIP() []byte {
-	file_phonenumber_proto_rawDescOnce.Do(func() {
-		file_phonenumber_proto_rawDescData = protoimpl.X.CompressGZIP(file_phonenumber_proto_rawDescData)
-	})
-	return file_phonenumber_proto_rawDescData
-}
+func file_phonenumber_proto_rawDescGZIP() []byte { _ = "STUB: not implemented"; return nil }
 
 var file_phonenumber_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_phonenumber_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
@@ -355,42 +295,5 @@ var file_phonenumber_proto_depIdxs = []int32{
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_phonenumber_proto_init() }
-func file_phonenumber_proto_init() {
-	if File_phonenumber_proto != nil {
-		return
-	}
-	if !protoimpl.UnsafeEnabled {
-		file_phonenumber_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*PhoneNumber); i {
-			case 0:
-				return &v.state
-			case 1:
-				return &v.sizeCache
-			case 2:
-				return &v.unknownFields
-			default:
-				return nil
-			}
-		}
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_phonenumber_proto_rawDesc,
-			NumEnums:      1,
-			NumMessages:   1,
-			NumExtensions: 0,
-			NumServices:   0,
-		},
-		GoTypes:           file_phonenumber_proto_goTypes,
-		DependencyIndexes: file_phonenumber_proto_depIdxs,
-		EnumInfos:         file_phonenumber_proto_enumTypes,
-		MessageInfos:      file_phonenumber_proto_msgTypes,
-	}.Build()
-	File_phonenumber_proto = out.File
-	file_phonenumber_proto_rawDesc = nil
-	file_phonenumber_proto_goTypes = nil
-	file_phonenumber_proto_depIdxs = nil
-}
+func init()                        { file_phonenumber_proto_init() }
+func file_phonenumber_proto_init() { _ = "STUB: not implemented"; return }

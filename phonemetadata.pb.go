@@ -27,10 +27,10 @@
 package phonenumbers
 
 import (
+	sync "sync"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -111,77 +111,38 @@ const (
 	Default_NumberFormat_NationalPrefixOptionalWhenFormatting = bool(false)
 )
 
-func (x *NumberFormat) Reset() {
-	*x = NumberFormat{}
-	if protoimpl.UnsafeEnabled {
-		mi := &file_phonemetadata_proto_msgTypes[0]
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		ms.StoreMessageInfo(mi)
-	}
-}
+func (x *NumberFormat) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *NumberFormat) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *NumberFormat) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*NumberFormat) ProtoMessage() {}
+func (*NumberFormat) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *NumberFormat) ProtoReflect() protoreflect.Message {
-	mi := &file_phonemetadata_proto_msgTypes[0]
-	if protoimpl.UnsafeEnabled && x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use NumberFormat.ProtoReflect.Descriptor instead.
-func (*NumberFormat) Descriptor() ([]byte, []int) {
-	return file_phonemetadata_proto_rawDescGZIP(), []int{0}
-}
+func (*NumberFormat) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *NumberFormat) GetPattern() string {
-	if x != nil && x.Pattern != nil {
-		return *x.Pattern
-	}
-	return ""
-}
+func (x *NumberFormat) GetPattern() string { _ = "STUB: not implemented"; return "" }
 
-func (x *NumberFormat) GetFormat() string {
-	if x != nil && x.Format != nil {
-		return *x.Format
-	}
-	return ""
-}
+func (x *NumberFormat) GetFormat() string { _ = "STUB: not implemented"; return "" }
 
-func (x *NumberFormat) GetLeadingDigitsPattern() []string {
-	if x != nil {
-		return x.LeadingDigitsPattern
-	}
-	return nil
-}
+func (x *NumberFormat) GetLeadingDigitsPattern() []string { _ = "STUB: not implemented"; return nil }
 
 func (x *NumberFormat) GetNationalPrefixFormattingRule() string {
-	if x != nil && x.NationalPrefixFormattingRule != nil {
-		return *x.NationalPrefixFormattingRule
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *NumberFormat) GetNationalPrefixOptionalWhenFormatting() bool {
-	if x != nil && x.NationalPrefixOptionalWhenFormatting != nil {
-		return *x.NationalPrefixOptionalWhenFormatting
-	}
-	return Default_NumberFormat_NationalPrefixOptionalWhenFormatting
+	_ = "STUB: not implemented"
+	return false
 }
 
 func (x *NumberFormat) GetDomesticCarrierCodeFormattingRule() string {
-	if x != nil && x.DomesticCarrierCodeFormattingRule != nil {
-		return *x.DomesticCarrierCodeFormattingRule
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
@@ -224,65 +185,30 @@ type PhoneNumberDesc struct {
 	ExampleNumber *string `protobuf:"bytes,6,opt,name=example_number,json=exampleNumber" json:"example_number,omitempty"`
 }
 
-func (x *PhoneNumberDesc) Reset() {
-	*x = PhoneNumberDesc{}
-	if protoimpl.UnsafeEnabled {
-		mi := &file_phonemetadata_proto_msgTypes[1]
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		ms.StoreMessageInfo(mi)
-	}
-}
+func (x *PhoneNumberDesc) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *PhoneNumberDesc) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *PhoneNumberDesc) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*PhoneNumberDesc) ProtoMessage() {}
+func (*PhoneNumberDesc) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *PhoneNumberDesc) ProtoReflect() protoreflect.Message {
-	mi := &file_phonemetadata_proto_msgTypes[1]
-	if protoimpl.UnsafeEnabled && x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use PhoneNumberDesc.ProtoReflect.Descriptor instead.
-func (*PhoneNumberDesc) Descriptor() ([]byte, []int) {
-	return file_phonemetadata_proto_rawDescGZIP(), []int{1}
-}
+func (*PhoneNumberDesc) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *PhoneNumberDesc) GetNationalNumberPattern() string {
-	if x != nil && x.NationalNumberPattern != nil {
-		return *x.NationalNumberPattern
-	}
-	return ""
-}
+func (x *PhoneNumberDesc) GetNationalNumberPattern() string { _ = "STUB: not implemented"; return "" }
 
-func (x *PhoneNumberDesc) GetPossibleLength() []int32 {
-	if x != nil {
-		return x.PossibleLength
-	}
-	return nil
-}
+func (x *PhoneNumberDesc) GetPossibleLength() []int32 { _ = "STUB: not implemented"; return nil }
 
 func (x *PhoneNumberDesc) GetPossibleLengthLocalOnly() []int32 {
-	if x != nil {
-		return x.PossibleLengthLocalOnly
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *PhoneNumberDesc) GetExampleNumber() string {
-	if x != nil && x.ExampleNumber != nil {
-		return *x.ExampleNumber
-	}
-	return ""
-}
+func (x *PhoneNumberDesc) GetExampleNumber() string { _ = "STUB: not implemented"; return "" }
 
 // If you add, remove, or rename fields, or change their semantics, check if you
 // should change the excludable field sets or the behavior in MetadataFilter.
@@ -443,260 +369,103 @@ const (
 	Default_PhoneMetadata_MobileNumberPortableRegion    = bool(false)
 )
 
-func (x *PhoneMetadata) Reset() {
-	*x = PhoneMetadata{}
-	if protoimpl.UnsafeEnabled {
-		mi := &file_phonemetadata_proto_msgTypes[2]
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		ms.StoreMessageInfo(mi)
-	}
-}
+func (x *PhoneMetadata) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *PhoneMetadata) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *PhoneMetadata) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*PhoneMetadata) ProtoMessage() {}
+func (*PhoneMetadata) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *PhoneMetadata) ProtoReflect() protoreflect.Message {
-	mi := &file_phonemetadata_proto_msgTypes[2]
-	if protoimpl.UnsafeEnabled && x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use PhoneMetadata.ProtoReflect.Descriptor instead.
-func (*PhoneMetadata) Descriptor() ([]byte, []int) {
-	return file_phonemetadata_proto_rawDescGZIP(), []int{2}
-}
+func (*PhoneMetadata) Descriptor() ([]byte, []int) { _ = "STUB: not implemented"; return nil, nil }
 
-func (x *PhoneMetadata) GetGeneralDesc() *PhoneNumberDesc {
-	if x != nil {
-		return x.GeneralDesc
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetGeneralDesc() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetFixedLine() *PhoneNumberDesc {
-	if x != nil {
-		return x.FixedLine
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetFixedLine() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetMobile() *PhoneNumberDesc {
-	if x != nil {
-		return x.Mobile
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetMobile() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetTollFree() *PhoneNumberDesc {
-	if x != nil {
-		return x.TollFree
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetTollFree() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetPremiumRate() *PhoneNumberDesc {
-	if x != nil {
-		return x.PremiumRate
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetPremiumRate() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetSharedCost() *PhoneNumberDesc {
-	if x != nil {
-		return x.SharedCost
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetSharedCost() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetPersonalNumber() *PhoneNumberDesc {
-	if x != nil {
-		return x.PersonalNumber
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetPersonalNumber() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetVoip() *PhoneNumberDesc {
-	if x != nil {
-		return x.Voip
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetVoip() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetPager() *PhoneNumberDesc {
-	if x != nil {
-		return x.Pager
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetPager() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetUan() *PhoneNumberDesc {
-	if x != nil {
-		return x.Uan
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetUan() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetEmergency() *PhoneNumberDesc {
-	if x != nil {
-		return x.Emergency
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetEmergency() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetVoicemail() *PhoneNumberDesc {
-	if x != nil {
-		return x.Voicemail
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetVoicemail() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetShortCode() *PhoneNumberDesc {
-	if x != nil {
-		return x.ShortCode
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetShortCode() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
-func (x *PhoneMetadata) GetStandardRate() *PhoneNumberDesc {
-	if x != nil {
-		return x.StandardRate
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetStandardRate() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
 func (x *PhoneMetadata) GetCarrierSpecific() *PhoneNumberDesc {
-	if x != nil {
-		return x.CarrierSpecific
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *PhoneMetadata) GetSmsServices() *PhoneNumberDesc {
-	if x != nil {
-		return x.SmsServices
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetSmsServices() *PhoneNumberDesc { _ = "STUB: not implemented"; return nil }
 
 func (x *PhoneMetadata) GetNoInternationalDialling() *PhoneNumberDesc {
-	if x != nil {
-		return x.NoInternationalDialling
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *PhoneMetadata) GetId() string {
-	if x != nil && x.Id != nil {
-		return *x.Id
-	}
-	return ""
-}
+func (x *PhoneMetadata) GetId() string { _ = "STUB: not implemented"; return "" }
 
-func (x *PhoneMetadata) GetCountryCode() int32 {
-	if x != nil && x.CountryCode != nil {
-		return *x.CountryCode
-	}
-	return 0
-}
+func (x *PhoneMetadata) GetCountryCode() int32 { _ = "STUB: not implemented"; return 0 }
 
-func (x *PhoneMetadata) GetInternationalPrefix() string {
-	if x != nil && x.InternationalPrefix != nil {
-		return *x.InternationalPrefix
-	}
-	return ""
-}
+func (x *PhoneMetadata) GetInternationalPrefix() string { _ = "STUB: not implemented"; return "" }
 
 func (x *PhoneMetadata) GetPreferredInternationalPrefix() string {
-	if x != nil && x.PreferredInternationalPrefix != nil {
-		return *x.PreferredInternationalPrefix
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
-func (x *PhoneMetadata) GetNationalPrefix() string {
-	if x != nil && x.NationalPrefix != nil {
-		return *x.NationalPrefix
-	}
-	return ""
-}
+func (x *PhoneMetadata) GetNationalPrefix() string { _ = "STUB: not implemented"; return "" }
 
-func (x *PhoneMetadata) GetPreferredExtnPrefix() string {
-	if x != nil && x.PreferredExtnPrefix != nil {
-		return *x.PreferredExtnPrefix
-	}
-	return ""
-}
+func (x *PhoneMetadata) GetPreferredExtnPrefix() string { _ = "STUB: not implemented"; return "" }
 
-func (x *PhoneMetadata) GetNationalPrefixForParsing() string {
-	if x != nil && x.NationalPrefixForParsing != nil {
-		return *x.NationalPrefixForParsing
-	}
-	return ""
-}
+func (x *PhoneMetadata) GetNationalPrefixForParsing() string { _ = "STUB: not implemented"; return "" }
 
 func (x *PhoneMetadata) GetNationalPrefixTransformRule() string {
-	if x != nil && x.NationalPrefixTransformRule != nil {
-		return *x.NationalPrefixTransformRule
-	}
+	_ = "STUB: not implemented"
 	return ""
 }
 
 func (x *PhoneMetadata) GetSameMobileAndFixedLinePattern() bool {
-	if x != nil && x.SameMobileAndFixedLinePattern != nil {
-		return *x.SameMobileAndFixedLinePattern
-	}
-	return Default_PhoneMetadata_SameMobileAndFixedLinePattern
+	_ = "STUB: not implemented"
+	return false
 }
 
-func (x *PhoneMetadata) GetNumberFormat() []*NumberFormat {
-	if x != nil {
-		return x.NumberFormat
-	}
-	return nil
-}
+func (x *PhoneMetadata) GetNumberFormat() []*NumberFormat { _ = "STUB: not implemented"; return nil }
 
 func (x *PhoneMetadata) GetIntlNumberFormat() []*NumberFormat {
-	if x != nil {
-		return x.IntlNumberFormat
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
-func (x *PhoneMetadata) GetMainCountryForCode() bool {
-	if x != nil && x.MainCountryForCode != nil {
-		return *x.MainCountryForCode
-	}
-	return Default_PhoneMetadata_MainCountryForCode
-}
+func (x *PhoneMetadata) GetMainCountryForCode() bool { _ = "STUB: not implemented"; return false }
 
-func (x *PhoneMetadata) GetLeadingDigits() string {
-	if x != nil && x.LeadingDigits != nil {
-		return *x.LeadingDigits
-	}
-	return ""
-}
+func (x *PhoneMetadata) GetLeadingDigits() string { _ = "STUB: not implemented"; return "" }
 
-func (x *PhoneMetadata) GetLeadingZeroPossible() bool {
-	if x != nil && x.LeadingZeroPossible != nil {
-		return *x.LeadingZeroPossible
-	}
-	return Default_PhoneMetadata_LeadingZeroPossible
-}
+func (x *PhoneMetadata) GetLeadingZeroPossible() bool { _ = "STUB: not implemented"; return false }
 
 func (x *PhoneMetadata) GetMobileNumberPortableRegion() bool {
-	if x != nil && x.MobileNumberPortableRegion != nil {
-		return *x.MobileNumberPortableRegion
-	}
-	return Default_PhoneMetadata_MobileNumberPortableRegion
+	_ = "STUB: not implemented"
+	return false
 }
 
 type PhoneMetadataCollection struct {
@@ -707,42 +476,25 @@ type PhoneMetadataCollection struct {
 	Metadata []*PhoneMetadata `protobuf:"bytes,1,rep,name=metadata" json:"metadata,omitempty"`
 }
 
-func (x *PhoneMetadataCollection) Reset() {
-	*x = PhoneMetadataCollection{}
-	if protoimpl.UnsafeEnabled {
-		mi := &file_phonemetadata_proto_msgTypes[3]
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		ms.StoreMessageInfo(mi)
-	}
-}
+func (x *PhoneMetadataCollection) Reset() { _ = "STUB: not implemented"; return }
 
-func (x *PhoneMetadataCollection) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
+func (x *PhoneMetadataCollection) String() string { _ = "STUB: not implemented"; return "" }
 
-func (*PhoneMetadataCollection) ProtoMessage() {}
+func (*PhoneMetadataCollection) ProtoMessage() { _ = "STUB: not implemented"; return }
 
 func (x *PhoneMetadataCollection) ProtoReflect() protoreflect.Message {
-	mi := &file_phonemetadata_proto_msgTypes[3]
-	if protoimpl.UnsafeEnabled && x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
+	_ = "STUB: not implemented"
+	return *new(protoreflect.Message)
 }
 
 // Deprecated: Use PhoneMetadataCollection.ProtoReflect.Descriptor instead.
 func (*PhoneMetadataCollection) Descriptor() ([]byte, []int) {
-	return file_phonemetadata_proto_rawDescGZIP(), []int{3}
+	_ = "STUB: not implemented"
+	return nil, nil
 }
 
 func (x *PhoneMetadataCollection) GetMetadata() []*PhoneMetadata {
-	if x != nil {
-		return x.Metadata
-	}
+	_ = "STUB: not implemented"
 	return nil
 }
 
@@ -924,12 +676,7 @@ var (
 	file_phonemetadata_proto_rawDescData = file_phonemetadata_proto_rawDesc
 )
 
-func file_phonemetadata_proto_rawDescGZIP() []byte {
-	file_phonemetadata_proto_rawDescOnce.Do(func() {
-		file_phonemetadata_proto_rawDescData = protoimpl.X.CompressGZIP(file_phonemetadata_proto_rawDescData)
-	})
-	return file_phonemetadata_proto_rawDescData
-}
+func file_phonemetadata_proto_rawDescGZIP() []byte { _ = "STUB: not implemented"; return nil }
 
 var file_phonemetadata_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_phonemetadata_proto_goTypes = []interface{}{
@@ -966,77 +713,5 @@ var file_phonemetadata_proto_depIdxs = []int32{
 	0,  // [0:20] is the sub-list for field type_name
 }
 
-func init() { file_phonemetadata_proto_init() }
-func file_phonemetadata_proto_init() {
-	if File_phonemetadata_proto != nil {
-		return
-	}
-	if !protoimpl.UnsafeEnabled {
-		file_phonemetadata_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*NumberFormat); i {
-			case 0:
-				return &v.state
-			case 1:
-				return &v.sizeCache
-			case 2:
-				return &v.unknownFields
-			default:
-				return nil
-			}
-		}
-		file_phonemetadata_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*PhoneNumberDesc); i {
-			case 0:
-				return &v.state
-			case 1:
-				return &v.sizeCache
-			case 2:
-				return &v.unknownFields
-			default:
-				return nil
-			}
-		}
-		file_phonemetadata_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*PhoneMetadata); i {
-			case 0:
-				return &v.state
-			case 1:
-				return &v.sizeCache
-			case 2:
-				return &v.unknownFields
-			default:
-				return nil
-			}
-		}
-		file_phonemetadata_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*PhoneMetadataCollection); i {
-			case 0:
-				return &v.state
-			case 1:
-				return &v.sizeCache
-			case 2:
-				return &v.unknownFields
-			default:
-				return nil
-			}
-		}
-	}
-	type x struct{}
-	out := protoimpl.TypeBuilder{
-		File: protoimpl.DescBuilder{
-			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_phonemetadata_proto_rawDesc,
-			NumEnums:      0,
-			NumMessages:   4,
-			NumExtensions: 0,
-			NumServices:   0,
-		},
-		GoTypes:           file_phonemetadata_proto_goTypes,
-		DependencyIndexes: file_phonemetadata_proto_depIdxs,
-		MessageInfos:      file_phonemetadata_proto_msgTypes,
-	}.Build()
-	File_phonemetadata_proto = out.File
-	file_phonemetadata_proto_rawDesc = nil
-	file_phonemetadata_proto_goTypes = nil
-	file_phonemetadata_proto_depIdxs = nil
-}
+func init()                          { file_phonemetadata_proto_init() }
+func file_phonemetadata_proto_init() { _ = "STUB: not implemented"; return }
